@@ -331,7 +331,13 @@ section .button button:hover {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    padding: 20px 30px;
+    padding: 20px 10px;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+    background: #4070F4;
+    color: #FFF;
 }
 
 .services .boxes .box .icon {
@@ -343,6 +349,12 @@ section .button button:hover {
     text-align: center;
     line-height: 50px;
     margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .icon {
+    background: #FFF;
+    color: #4070F4;
 }
 
 /* Responsive Media Query CSS */
