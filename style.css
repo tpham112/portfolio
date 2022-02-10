@@ -329,8 +329,20 @@ section .button button:hover {
     width: calc(100% / 3 - 20px);
     margin: 20px 0;
     border-radius: 12px;
+    text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     padding: 20px 30px;
+}
+
+.services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    color: #FFF;
+    background: #4070F4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
 }
 
 /* Responsive Media Query CSS */
