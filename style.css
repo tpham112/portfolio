@@ -8,6 +8,30 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6E93F7;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070F4;
+    border-radius: 12px;
+}
+
 /* Navigation Menu CSS */
 
 nav {
@@ -89,10 +113,15 @@ nav .menu-button, .navbar .cancel-button {
     right: 30px;
     top: 20px;
     display: none;
+    cursor: pointer;
 }
 
 nav .menu-button {
     color: #4070F4;
+}
+
+nav.sticky .menu-button {
+    color: #FFF;
 }
 
 /* Home Section CSS */
@@ -161,6 +190,10 @@ nav .menu-button {
 }
 
 /* About Me Section CSS */
+
+section {
+    padding-top: 40px;
+}
 
 section .content {
     width: 80%;
@@ -326,7 +359,7 @@ section .button button:hover {
 }
 
 .services .boxes .box {
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 20px); 
     margin: 20px 0;
     border-radius: 12px;
     text-align: center;
@@ -357,6 +390,61 @@ section .button button:hover {
     color: #4070F4;
 }
 
+.services .boxes .box:hover .topic {
+    color: #FFF;
+}
+
+/* Contact Section CSS */
+
+.contact {
+    background: #F0F8FF;
+    padding: 20px 0;
+}
+
+.contact .text {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* Footer CSS */
+footer {
+    background: #4070F4;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer .text span a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer .text span a:hover {
+    text-decoration: underline;
+}
+
+/* Scroll To Top Button CSS */
+
+.scroll-button i {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    background: #4070F4;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
 /* Responsive Media Query CSS */
 
 @media (max-width: 1190px) {
@@ -365,6 +453,10 @@ section .button button:hover {
     }
 
     .skills .content {
+        width: 90%;
+    }
+
+    .services .content {
         width: 90%;
     }
 }
@@ -384,6 +476,14 @@ section .button button:hover {
     .about .about-details .left {
         width: 85%;
         margin: 40px 0;
+    }
+
+    .services .boxes .box {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .contact .text {
+       width: 90%; 
     }
 }
 
@@ -420,6 +520,10 @@ section .button button:hover {
         color: #FFF;
     }
 
+    nav.sticky .navbar .menu li a:hover {
+        color:  #4070F4;
+    }
+
     .navbar .media-icons a {
         display: none;
     }
@@ -449,6 +553,14 @@ section .button button:hover {
     .skills .skills-details .boxes {
         width: 90%;
         margin: 40px 0;
+    }
+
+    .services .boxes .box {
+        width: 100%;
+    }
+
+    .contact .text {
+        width: 100%;
     }
 }
 
